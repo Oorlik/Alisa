@@ -1,0 +1,19 @@
+@media(max-width: 425px){
+   
+    .slide{
+        flex-wrap: wrap;
+    }
+    .slide div{
+        width: 90%;
+        height: 350px;
+    }
+    .but{
+        margin-top: 50px;
+    }
+    iframe{
+        top: 25%;
+        right: 3%;
+        width:95%;
+       
+    }
+}
