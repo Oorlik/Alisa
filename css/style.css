@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.section1{
+    height: 100vh;
+    background: url('../img/saacura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Caveat", cursive;
+
+}
+.section1 h1{
+    color: #9c516f;
+    font-size: 5em;
+    
+}
+.section1 h1 i{
+    color: #5c2f41;
+
+}
+
+.birt{
+    padding-top:20%;
+}
+.birt2 i{
+    font-size: 4em;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    color: #575757;
+}
+@keyframes slidein {
+    from {
+        margin-top: 40px;
+    }
+
+    to{
+        margin-top: 70px;
+    }
+}
+
+
+.section2{
+    font-family: "Caveat", cursive;
+
+}
+.static{
+    text-align: center;
+    border: 5px solid #9c516f;
+}
+.static h1, .static2 h1{
+    font-size: 40px;
+    margin: 20px 0;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide div{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    width: 30%;
+    height: 300px;
+    margin: 50px 20px;
+    box-shadow: 0px 3px 31px 0px rgba(230,135,230,1);
+    border: 3px solid #e77ca7;;
+
+}
+.slide div ul li{
+    list-style: none;
+}
+.slide div ul li i{
+    color: red;
+}
+.slide div span{
+    color: #9c516f;
+    font-weight: bold;
+}
+.static2 {
+    text-align: center;
+
+}
+.section2 button{
+    padding: 20px 50px;
+    font-size: 23px;
+    font-family: "Caveat", cursive;
+    background: rgb(34, 34, 34);
+    color: #fff;
+    border: 3px solid #9c516f; 
+    border-radius: 10px;
+}
+.section2 button i{
+    margin: 0 10px;
+}
+.but{
+    text-align: center;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+#modal-video{
+    overflow-y: hidden;
+    display: none;
+}
+#modal-video::before{
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.9);
+    z-index: 10000;
+}
+.closeButton{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    z-index: 10000;
+    cursor: pointer;
+}
+iframe{
+    position: fixed;
+    z-index: 10000;
+    top: 10%;
+    right: 15%;
+    width: 70%;
+    min-width: 60%;
+}
